@@ -1,0 +1,37 @@
+apiVersion: apps/v1  # Указывает версию API для создания ресурса Deployment.
+kind: Deployment  # Тип ресурса - Deployment, который управляет состоянием приложения.
+metadata:
+  name: zookeeper  # Имя Deployment для идентификации.
+spec:
+  replicas: 1  # Количество реплик контейнера Zookeeper.
+  selector:
+    matchLabels:
+      app: zookeeper  # Указывает, что Deployment управляет подами с меткой "app: zookeeper".
+  template:  # Шаблон для создания подов.
+    metadata:
+      labels:
+        app: zookeeper  # Метка, присваиваемая создаваемым подам.
+    spec:
+      containers:
+      - name: zookeeper  # Имя контейнера.
+        image: bitnami/zookeeper:3.8.1  # Docker-образ Zookeeper версии 3.8.1 от Bitnami.
+        env:  # Переменные окружения для контейнера.
+        - name: ALLOW_ANONYMOUS_LOGIN
+          value: "yes"  # Разрешение на анонимный доступ без аутентификации.
+        ports:
+        - containerPort: 2181  # Открываем порт 2181 для Zookeeper.
+          name: zookeeper  # Имя порта для использования в Kubernetes.
+
+---
+apiVersion: v1  # Указывает версию API для создания ресурса Service.
+kind: Service  # Тип ресурса - Service для организации доступа к Zookeeper.
+metadata:
+  name: zookeeper  # Имя Service для идентификации.
+spec:
+  selector:
+    app: zookeeper  # Указывает, что сервис подключается к подам с меткой "app: zookeeper".
+  ports:
+  - port: 2181  # Порт, через который сервис будет доступен внутри кластера.
+    targetPort: 2181  # Порт контейнера, к которому будет направляться трафик.
+    protocol: TCP  # Используемый сетевой протокол (TCP).
+    name: zookeeper  # Имя порта для идентификации в Kubernetes.

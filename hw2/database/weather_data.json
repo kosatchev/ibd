@@ -1,0 +1,1136 @@
+[
+    {
+        "city": "Saint Petersburg",
+        "temperature": 30,
+        "condition": "rainy",
+        "timestamp": 1734273055
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": -16,
+        "condition": "stormy",
+        "timestamp": 1734273058
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 0,
+        "condition": "cloudy",
+        "timestamp": 1734273060
+    },
+    {
+        "city": "Sochi",
+        "temperature": -22,
+        "condition": "sunny",
+        "timestamp": 1734273062
+    },
+    {
+        "city": "Moscow",
+        "temperature": -24,
+        "condition": "sunny",
+        "timestamp": 1734273064
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": -28,
+        "condition": "snowy",
+        "timestamp": 1734273066
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": -21,
+        "condition": "rainy",
+        "timestamp": 1734273068
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 33,
+        "condition": "snowy",
+        "timestamp": 1734273070
+    },
+    {
+        "city": "Moscow",
+        "temperature": -22,
+        "condition": "snowy",
+        "timestamp": 1734273072
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 25,
+        "condition": "rainy",
+        "timestamp": 1734273074
+    },
+    {
+        "city": "Moscow",
+        "temperature": 24,
+        "condition": "stormy",
+        "timestamp": 1734273076
+    },
+    {
+        "city": "Sochi",
+        "temperature": 7,
+        "condition": "stormy",
+        "timestamp": 1734273078
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 1,
+        "condition": "snowy",
+        "timestamp": 1734273080
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": -29,
+        "condition": "cloudy",
+        "timestamp": 1734273082
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 3,
+        "condition": "stormy",
+        "timestamp": 1734273084
+    },
+    {
+        "city": "Sochi",
+        "temperature": 16,
+        "condition": "snowy",
+        "timestamp": 1734273086
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 18,
+        "condition": "rainy",
+        "timestamp": 1734273088
+    },
+    {
+        "city": "Moscow",
+        "temperature": 26,
+        "condition": "stormy",
+        "timestamp": 1734273090
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": -22,
+        "condition": "rainy",
+        "timestamp": 1734273092
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": -1,
+        "condition": "rainy",
+        "timestamp": 1734273094
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 7,
+        "condition": "snowy",
+        "timestamp": 1734273096
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": -10,
+        "condition": "snowy",
+        "timestamp": 1734273098
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": -9,
+        "condition": "stormy",
+        "timestamp": 1734273100
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 4,
+        "condition": "snowy",
+        "timestamp": 1734273102
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": -25,
+        "condition": "cloudy",
+        "timestamp": 1734273104
+    },
+    {
+        "city": "Moscow",
+        "temperature": -24,
+        "condition": "stormy",
+        "timestamp": 1734273106
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 2,
+        "condition": "snowy",
+        "timestamp": 1734273108
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": -8,
+        "condition": "rainy",
+        "timestamp": 1734273110
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": -1,
+        "condition": "stormy",
+        "timestamp": 1734273112
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": -30,
+        "condition": "rainy",
+        "timestamp": 1734273114
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 29,
+        "condition": "sunny",
+        "timestamp": 1734273116
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 31,
+        "condition": "snowy",
+        "timestamp": 1734273118
+    },
+    {
+        "city": "Sochi",
+        "temperature": -26,
+        "condition": "rainy",
+        "timestamp": 1734273120
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": -27,
+        "condition": "stormy",
+        "timestamp": 1734273122
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 9,
+        "condition": "rainy",
+        "timestamp": 1734273124
+    },
+    {
+        "city": "Moscow",
+        "temperature": -24,
+        "condition": "cloudy",
+        "timestamp": 1734273126
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 31,
+        "condition": "rainy",
+        "timestamp": 1734273128
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": -23,
+        "condition": "rainy",
+        "timestamp": 1734273130
+    },
+    {
+        "city": "Sochi",
+        "temperature": -16,
+        "condition": "sunny",
+        "timestamp": 1734273132
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 20,
+        "condition": "stormy",
+        "timestamp": 1734273134
+    },
+    {
+        "city": "Sochi",
+        "temperature": -8,
+        "condition": "snowy",
+        "timestamp": 1734273136
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": -10,
+        "condition": "snowy",
+        "timestamp": 1734273138
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 33,
+        "condition": "stormy",
+        "timestamp": 1734273140
+    },
+    {
+        "city": "Sochi",
+        "temperature": -13,
+        "condition": "snowy",
+        "timestamp": 1734273142
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 33,
+        "condition": "cloudy",
+        "timestamp": 1734273144
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 33,
+        "condition": "snowy",
+        "timestamp": 1734273146
+    },
+    {
+        "city": "Sochi",
+        "temperature": -3,
+        "condition": "snowy",
+        "timestamp": 1734273148
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": -20,
+        "condition": "sunny",
+        "timestamp": 1734273150
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 29,
+        "condition": "stormy",
+        "timestamp": 1734273152
+    },
+    {
+        "city": "Sochi",
+        "temperature": 3,
+        "condition": "sunny",
+        "timestamp": 1734273154
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 10,
+        "condition": "stormy",
+        "timestamp": 1734273156
+    },
+    {
+        "city": "Sochi",
+        "temperature": -5,
+        "condition": "snowy",
+        "timestamp": 1734273158
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 21,
+        "condition": "cloudy",
+        "timestamp": 1734273160
+    },
+    {
+        "city": "Sochi",
+        "temperature": -14,
+        "condition": "cloudy",
+        "timestamp": 1734273162
+    },
+    {
+        "city": "Sochi",
+        "temperature": -12,
+        "condition": "sunny",
+        "timestamp": 1734273164
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": -4,
+        "condition": "snowy",
+        "timestamp": 1734273166
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": -25,
+        "condition": "stormy",
+        "timestamp": 1734273168
+    },
+    {
+        "city": "Sochi",
+        "temperature": 17,
+        "condition": "rainy",
+        "timestamp": 1734273170
+    },
+    {
+        "city": "Moscow",
+        "temperature": 29,
+        "condition": "rainy",
+        "timestamp": 1734273172
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 12,
+        "condition": "cloudy",
+        "timestamp": 1734273174
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 25,
+        "condition": "stormy",
+        "timestamp": 1734273176
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": -2,
+        "condition": "rainy",
+        "timestamp": 1734273178
+    },
+    {
+        "city": "Moscow",
+        "temperature": -11,
+        "condition": "sunny",
+        "timestamp": 1734273180
+    },
+    {
+        "city": "Sochi",
+        "temperature": -1,
+        "condition": "sunny",
+        "timestamp": 1734273182
+    },
+    {
+        "city": "Moscow",
+        "temperature": -22,
+        "condition": "snowy",
+        "timestamp": 1734273184
+    },
+    {
+        "city": "Sochi",
+        "temperature": 6,
+        "condition": "snowy",
+        "timestamp": 1734273186
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 10,
+        "condition": "cloudy",
+        "timestamp": 1734273188
+    },
+    {
+        "city": "Sochi",
+        "temperature": -4,
+        "condition": "cloudy",
+        "timestamp": 1734273190
+    },
+    {
+        "city": "Sochi",
+        "temperature": 7,
+        "condition": "cloudy",
+        "timestamp": 1734273192
+    },
+    {
+        "city": "Moscow",
+        "temperature": 21,
+        "condition": "cloudy",
+        "timestamp": 1734273194
+    },
+    {
+        "city": "Sochi",
+        "temperature": 13,
+        "condition": "cloudy",
+        "timestamp": 1734273196
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 15,
+        "condition": "rainy",
+        "timestamp": 1734273198
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 7,
+        "condition": "rainy",
+        "timestamp": 1734273200
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 19,
+        "condition": "sunny",
+        "timestamp": 1734273202
+    },
+    {
+        "city": "Sochi",
+        "temperature": 28,
+        "condition": "stormy",
+        "timestamp": 1734273204
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": -27,
+        "condition": "stormy",
+        "timestamp": 1734273206
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 22,
+        "condition": "cloudy",
+        "timestamp": 1734273208
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": -6,
+        "condition": "snowy",
+        "timestamp": 1734273210
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 3,
+        "condition": "stormy",
+        "timestamp": 1734273212
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 0,
+        "condition": "cloudy",
+        "timestamp": 1734273214
+    },
+    {
+        "city": "Sochi",
+        "temperature": 26,
+        "condition": "cloudy",
+        "timestamp": 1734273216
+    },
+    {
+        "city": "Sochi",
+        "temperature": 13,
+        "condition": "rainy",
+        "timestamp": 1734273218
+    },
+    {
+        "city": "Sochi",
+        "temperature": -8,
+        "condition": "snowy",
+        "timestamp": 1734273220
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": -13,
+        "condition": "cloudy",
+        "timestamp": 1734273222
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 5,
+        "condition": "cloudy",
+        "timestamp": 1734273224
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 2,
+        "condition": "stormy",
+        "timestamp": 1734273226
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 6,
+        "condition": "cloudy",
+        "timestamp": 1734273228
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": -21,
+        "condition": "stormy",
+        "timestamp": 1734273230
+    },
+    {
+        "city": "Moscow",
+        "temperature": 26,
+        "condition": "stormy",
+        "timestamp": 1734273232
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 26,
+        "condition": "cloudy",
+        "timestamp": 1734273234
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": -12,
+        "condition": "cloudy",
+        "timestamp": 1734273236
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 4,
+        "condition": "cloudy",
+        "timestamp": 1734273238
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": -30,
+        "condition": "snowy",
+        "timestamp": 1734273240
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 32,
+        "condition": "snowy",
+        "timestamp": 1734273242
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 25,
+        "condition": "sunny",
+        "timestamp": 1734273244
+    },
+    {
+        "city": "Moscow",
+        "temperature": 3,
+        "condition": "sunny",
+        "timestamp": 1734273246
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 14,
+        "condition": "stormy",
+        "timestamp": 1734273248
+    },
+    {
+        "city": "Sochi",
+        "temperature": 7,
+        "condition": "snowy",
+        "timestamp": 1734273250
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 10,
+        "condition": "sunny",
+        "timestamp": 1734273252
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 25,
+        "condition": "sunny",
+        "timestamp": 1734273254
+    },
+    {
+        "city": "Moscow",
+        "temperature": -2,
+        "condition": "snowy",
+        "timestamp": 1734273256
+    },
+    {
+        "city": "Moscow",
+        "temperature": -28,
+        "condition": "stormy",
+        "timestamp": 1734273258
+    },
+    {
+        "city": "Moscow",
+        "temperature": -6,
+        "condition": "snowy",
+        "timestamp": 1734273260
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": -18,
+        "condition": "cloudy",
+        "timestamp": 1734273262
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 12,
+        "condition": "rainy",
+        "timestamp": 1734273264
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": -2,
+        "condition": "cloudy",
+        "timestamp": 1734273266
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": -27,
+        "condition": "rainy",
+        "timestamp": 1734273268
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": -10,
+        "condition": "rainy",
+        "timestamp": 1734273270
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": -19,
+        "condition": "sunny",
+        "timestamp": 1734273272
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 31,
+        "condition": "stormy",
+        "timestamp": 1734273274
+    },
+    {
+        "city": "Moscow",
+        "temperature": -9,
+        "condition": "snowy",
+        "timestamp": 1734273276
+    },
+    {
+        "city": "Sochi",
+        "temperature": 11,
+        "condition": "stormy",
+        "timestamp": 1734273278
+    },
+    {
+        "city": "Moscow",
+        "temperature": 2,
+        "condition": "stormy",
+        "timestamp": 1734273280
+    },
+    {
+        "city": "Moscow",
+        "temperature": -8,
+        "condition": "sunny",
+        "timestamp": 1734273282
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 3,
+        "condition": "sunny",
+        "timestamp": 1734273284
+    },
+    {
+        "city": "Sochi",
+        "temperature": 4,
+        "condition": "snowy",
+        "timestamp": 1734273286
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 11,
+        "condition": "stormy",
+        "timestamp": 1734273288
+    },
+    {
+        "city": "Sochi",
+        "temperature": 25,
+        "condition": "snowy",
+        "timestamp": 1734273290
+    },
+    {
+        "city": "Moscow",
+        "temperature": -28,
+        "condition": "stormy",
+        "timestamp": 1734273292
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 29,
+        "condition": "snowy",
+        "timestamp": 1734273294
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 31,
+        "condition": "sunny",
+        "timestamp": 1734273296
+    },
+    {
+        "city": "Sochi",
+        "temperature": -8,
+        "condition": "snowy",
+        "timestamp": 1734273298
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": -5,
+        "condition": "sunny",
+        "timestamp": 1734273300
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 15,
+        "condition": "sunny",
+        "timestamp": 1734273302
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": -14,
+        "condition": "rainy",
+        "timestamp": 1734273304
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": -9,
+        "condition": "stormy",
+        "timestamp": 1734273306
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 29,
+        "condition": "cloudy",
+        "timestamp": 1734273308
+    },
+    {
+        "city": "Moscow",
+        "temperature": -18,
+        "condition": "cloudy",
+        "timestamp": 1734273310
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 4,
+        "condition": "snowy",
+        "timestamp": 1734273312
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": -26,
+        "condition": "sunny",
+        "timestamp": 1734273314
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": -20,
+        "condition": "sunny",
+        "timestamp": 1734273316
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": -27,
+        "condition": "stormy",
+        "timestamp": 1734273318
+    },
+    {
+        "city": "Moscow",
+        "temperature": -2,
+        "condition": "cloudy",
+        "timestamp": 1734273320
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 31,
+        "condition": "stormy",
+        "timestamp": 1734273322
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 6,
+        "condition": "stormy",
+        "timestamp": 1734273324
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 28,
+        "condition": "sunny",
+        "timestamp": 1734273326
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 29,
+        "condition": "cloudy",
+        "timestamp": 1734273328
+    },
+    {
+        "city": "Sochi",
+        "temperature": -18,
+        "condition": "rainy",
+        "timestamp": 1734273330
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 18,
+        "condition": "cloudy",
+        "timestamp": 1734273332
+    },
+    {
+        "city": "Sochi",
+        "temperature": 0,
+        "condition": "rainy",
+        "timestamp": 1734273334
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 19,
+        "condition": "stormy",
+        "timestamp": 1734273336
+    },
+    {
+        "city": "Sochi",
+        "temperature": -2,
+        "condition": "stormy",
+        "timestamp": 1734273338
+    },
+    {
+        "city": "Moscow",
+        "temperature": 2,
+        "condition": "snowy",
+        "timestamp": 1734273340
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 1,
+        "condition": "snowy",
+        "timestamp": 1734273342
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 12,
+        "condition": "cloudy",
+        "timestamp": 1734273344
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 26,
+        "condition": "cloudy",
+        "timestamp": 1734273346
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 12,
+        "condition": "rainy",
+        "timestamp": 1734273348
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 17,
+        "condition": "stormy",
+        "timestamp": 1734273350
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 34,
+        "condition": "sunny",
+        "timestamp": 1734273352
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": -23,
+        "condition": "stormy",
+        "timestamp": 1734273354
+    },
+    {
+        "city": "Moscow",
+        "temperature": 31,
+        "condition": "sunny",
+        "timestamp": 1734273356
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 1,
+        "condition": "sunny",
+        "timestamp": 1734273358
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 30,
+        "condition": "stormy",
+        "timestamp": 1734273360
+    },
+    {
+        "city": "Sochi",
+        "temperature": 17,
+        "condition": "snowy",
+        "timestamp": 1734273362
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": -26,
+        "condition": "sunny",
+        "timestamp": 1734273364
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": -20,
+        "condition": "rainy",
+        "timestamp": 1734273366
+    },
+    {
+        "city": "Sochi",
+        "temperature": -29,
+        "condition": "snowy",
+        "timestamp": 1734273368
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 17,
+        "condition": "stormy",
+        "timestamp": 1734273370
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 18,
+        "condition": "snowy",
+        "timestamp": 1734273372
+    },
+    {
+        "city": "Sochi",
+        "temperature": -26,
+        "condition": "rainy",
+        "timestamp": 1734273374
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": -22,
+        "condition": "snowy",
+        "timestamp": 1734273376
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 7,
+        "condition": "cloudy",
+        "timestamp": 1734273378
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": 9,
+        "condition": "stormy",
+        "timestamp": 1734273380
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 27,
+        "condition": "snowy",
+        "timestamp": 1734273382
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 1,
+        "condition": "sunny",
+        "timestamp": 1734273384
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 25,
+        "condition": "rainy",
+        "timestamp": 1734273386
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 5,
+        "condition": "rainy",
+        "timestamp": 1734273388
+    },
+    {
+        "city": "Moscow",
+        "temperature": 30,
+        "condition": "rainy",
+        "timestamp": 1734273390
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": -28,
+        "condition": "stormy",
+        "timestamp": 1734273392
+    },
+    {
+        "city": "Sochi",
+        "temperature": 28,
+        "condition": "snowy",
+        "timestamp": 1734273394
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 15,
+        "condition": "sunny",
+        "timestamp": 1734273396
+    },
+    {
+        "city": "Moscow",
+        "temperature": -18,
+        "condition": "snowy",
+        "timestamp": 1734273398
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 1,
+        "condition": "stormy",
+        "timestamp": 1734273400
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": -27,
+        "condition": "cloudy",
+        "timestamp": 1734273402
+    },
+    {
+        "city": "Saint Petersburg",
+        "temperature": -16,
+        "condition": "rainy",
+        "timestamp": 1734273404
+    },
+    {
+        "city": "Moscow",
+        "temperature": 2,
+        "condition": "snowy",
+        "timestamp": 1734273406
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 2,
+        "condition": "rainy",
+        "timestamp": 1734273408
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": -15,
+        "condition": "snowy",
+        "timestamp": 1734273410
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": 28,
+        "condition": "snowy",
+        "timestamp": 1734273412
+    },
+    {
+        "city": "Moscow",
+        "temperature": 11,
+        "condition": "snowy",
+        "timestamp": 1734273414
+    },
+    {
+        "city": "Sochi",
+        "temperature": -18,
+        "condition": "cloudy",
+        "timestamp": 1734273416
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": 23,
+        "condition": "sunny",
+        "timestamp": 1734273418
+    },
+    {
+        "city": "Vladivostok",
+        "temperature": -4,
+        "condition": "cloudy",
+        "timestamp": 1734273420
+    },
+    {
+        "city": "Sochi",
+        "temperature": -15,
+        "condition": "cloudy",
+        "timestamp": 1734273422
+    },
+    {
+        "city": "Moscow",
+        "temperature": -29,
+        "condition": "rainy",
+        "timestamp": 1734273424
+    },
+    {
+        "city": "Sochi",
+        "temperature": 20,
+        "condition": "snowy",
+        "timestamp": 1734273426
+    },
+    {
+        "city": "Moscow",
+        "temperature": -24,
+        "condition": "sunny",
+        "timestamp": 1734273428
+    },
+    {
+        "city": "Krasnoyarsk",
+        "temperature": -17,
+        "condition": "cloudy",
+        "timestamp": 1734273430
+    },
+    {
+        "city": "Moscow",
+        "temperature": 15,
+        "condition": "sunny",
+        "timestamp": 1734273432
+    }
+]

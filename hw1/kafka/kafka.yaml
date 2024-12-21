@@ -1,0 +1,50 @@
+apiVersion: apps/v1  # Определяет версию API для создания ресурса Deployment.
+kind: Deployment  # Тип ресурса - Deployment, управляющий состоянием приложения.
+metadata:
+  name: kafka  # Имя Deployment для Kafka.
+spec:
+  replicas: 1  # Количество реплик контейнера Kafka.
+  selector:
+    matchLabels:
+      app: kafka  # Указывает, что Deployment управляет подами с меткой "app: kafka".
+  template:  # Шаблон для создания подов.
+    metadata:
+      labels:
+        app: kafka  # Метка, которая будет присвоена создаваемым подам.
+    spec:
+      containers:
+      - name: kafka  # Имя контейнера.
+        image: bitnami/kafka:3.5.1  # Docker-образ Kafka версии 3.5.1 от Bitnami.
+        env:  # Переменные окружения для контейнера.
+        - name: KAFKA_CFG_ZOOKEEPER_CONNECT
+          valueFrom:
+            configMapKeyRef:
+              name: configs  # Ссылка на ConfigMap для получения адреса Zookeeper.
+              key: KAFKA_CFG_ZOOKEEPER_CONNECT  # Ключ в ConfigMap, содержащий адрес Zookeeper.
+        - name: ALLOW_PLAINTEXT_LISTENER
+          value: "yes"  # Разрешает использование небезопасных соединений (PLAINTEXT).
+        - name: ALLOW_ANONYMOUS_LOGIN
+          value: "yes"  # Разрешает анонимный доступ в Kafka.
+        - name: KAFKA_ADVERTISED_LISTENERS
+          valueFrom:
+            configMapKeyRef:
+              name: configs  # Ссылка на ConfigMap для получения списка слушателей Kafka.
+              key: KAFKA_ADVERTISED_LISTENERS  # Ключ в ConfigMap, содержащий список слушателей.
+        ports:
+        - containerPort: 9092  # Порт внутри контейнера, на котором работает Kafka.
+          name: kafka  # Имя порта для использования в Kubernetes.
+
+---
+apiVersion: v1  # Определяет версию API для создания ресурса Service.
+kind: Service  # Тип ресурса - Service для подключения к Kafka.
+metadata:
+  name: kafka  # Имя Service для Kafka.
+spec:
+  type: NodePort  # Тип сервиса, открывающий порт на каждом узле кластера.
+  selector:
+    app: kafka  # Указывает, что этот сервис будет связываться с подами, имеющими метку "app: kafka".
+  ports:
+  - port: 9092  # Внешний порт, по которому сервис будет доступен.
+    targetPort: 9092  # Порт контейнера, на который будет перенаправляться трафик.
+    protocol: TCP  # Протокол для подключения (TCP).
+    name: kafka  # Имя порта для использования в Kubernetes.

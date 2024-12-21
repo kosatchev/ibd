@@ -1,0 +1,91 @@
+apiVersion: apps/v1  # Указывает API-версию для создания Deployment.
+kind: Deployment  # Определяет ресурс Deployment для управления состоянием приложения.
+metadata:
+  name: connector-app  # Имя Deployment, которое используется для идентификации.
+spec:
+  replicas: 1  # Количество реплик (экземпляров) контейнера.
+  selector:
+    matchLabels:
+      app: connector-app  # Метка для связи с подами.
+  template:  # Шаблон для создания подов.
+    metadata:
+      labels:
+        app: connector-app  # Метка, назначаемая создаваемым подам.
+    spec:
+      containers:
+      - name: connector-app-container  # Имя контейнера.
+        image: timmyalvice8/python-connector  # Замените на ваш собственный образ.
+        ports:
+        - containerPort: 5000  # Открытие порта 5000 внутри контейнера.
+        env:  # Переменные окружения для контейнера.
+
+        # Переменные окружения для подключения к базе данных PostgreSQL
+        - name: POSTGRES_USER
+          valueFrom:
+            secretKeyRef:
+              name: secrets  # Секрет, содержащий имя пользователя PostgreSQL.
+              key: postgres-user  # Ключ в секрете для имени пользователя.
+        - name: POSTGRES_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: secrets  # Секрет, содержащий пароль PostgreSQL.
+              key: postgres-password  # Ключ в секрете для пароля.
+        - name: PG_DBNAME
+          valueFrom:
+            configMapKeyRef:
+              name: configs
+              key: POSTGRES_DB
+        - name: PG_HOST
+          valueFrom:
+            configMapKeyRef:
+              name: configs
+              key: POSTGRES_HOST
+        - name: PG_PORT
+          valueFrom:
+            configMapKeyRef:
+              name: configs
+              key: POSTGRES_PORT
+
+        # Переменные окружения для подключения к Kafka
+        - name: KAFKA_BOOTSTRAP_SERVERS
+          valueFrom:
+            configMapKeyRef:
+              name: configs
+              key: KAFKA_BOOTSTRAP_SERVERS
+        - name: KAFKA_TOPIC
+          valueFrom:
+            configMapKeyRef:
+              name: configs
+              key: KAFKA_TOPIC
+
+---
+apiVersion: v1  # Указывает API-версию для создания Service.
+kind: Service  # Определяет ресурс Service для подключения к приложению.
+metadata:
+  name: connector-app-service  # Имя Service для приложения.
+spec:
+  selector:
+    app: connector-app  # Указывает, что сервис связывается с подами с меткой "app: connector-app".
+  ports:
+  - protocol: TCP
+    port: 8080  # Порт, по которому будет доступен сервис.
+    targetPort: 5000  # Порт, на который будет направляться трафик внутри контейнера.
+  type: ClusterIP  # Тип сервиса, который доступен только внутри кластера (по умолчанию).
+
+---
+apiVersion: networking.k8s.io/v1  # API-версия для создания Ingress.
+kind: Ingress  # Определяет ресурс Ingress для маршрутизации HTTP-запросов.
+metadata:
+  name: connector-app-ingress  # Имя Ingress.
+spec:
+  rules:
+  - host: localhost  # Замените на ваш домен или IP.
+    http:
+      paths:
+      - path: /fetch  # Путь, по которому будет доступно приложение.
+        pathType: Prefix
+        backend:
+          service:
+            name: connector-app-service  # Имя сервиса, на который будут перенаправляться запросы.
+            port:
+              number: 8080  # Порт, на который будет направляться трафик в сервисе.

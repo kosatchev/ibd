@@ -1,0 +1,25 @@
+apiVersion: v1  # Указывает на версию API, которая используется для создания ресурса ConfigMap. В данном случае это версия v1.
+kind: ConfigMap  # Определяет тип объекта. ConfigMap используется для хранения конфигурации в виде пар ключ-значение.
+metadata:  # Содержит метаданные объекта, такие как имя и метки.
+  name: configs  # Имя ConfigMap, используемое для его идентификации в кластере.
+  labels:  # Метки, используемые для организации и фильтрации ресурсов.
+    app: postgres  # Метка "app" с значением "postgres", связывающая этот ресурс с приложением PostgreSQL.
+data:  # Хранит конфигурационные данные в виде пар ключ-значение.
+
+  # Конфигурации для PostgreSQL
+  POSTGRES_DB: postgres  # Имя базы данных для подключения к PostgreSQL.
+  POSTGRES_HOST: postgres-service  # Хост для подключения к сервису PostgreSQL.
+  POSTGRES_PORT: "5432"  # Порт для подключения к PostgreSQL.
+
+  # Конфигурации для Kafka
+  KAFKA_CFG_ZOOKEEPER_CONNECT: zookeeper:2181  # Адрес подключения к Zookeeper, используемому для координации Kafka.
+  KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092  # URL, который Kafka будет рекламировать для подключения клиентов.
+  KAFKA_BOOTSTRAP_SERVERS: kafka:9092  # Список серверов Kafka, к которым можно подключаться.
+  KAFKA_TOPIC: customers  # Имя темы (topic) в Kafka для отправки и получения сообщений.
+
+  # Конфигурации для Clickhouse
+  CLICKHOUSE_HOST: clickhouse  # Хост для подключения к серверу Clickhouse.
+  CLICKHOUSE_PORT: "8123"  # Порт для подключения к Clickhouse.
+  CLICKHOUSE_DATABASE: default  # Имя базы данных в Clickhouse.
+  CLICKHOUSE_TABLE: customer_purchase  # Имя таблицы в Clickhouse для хранения данных о покупках.
+  CLICKHOUSE_RESULT_TABLE: customers_transformed  # Имя таблицы для хранения обработанных данных клиентов.

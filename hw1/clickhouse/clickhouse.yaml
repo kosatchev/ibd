@@ -1,0 +1,41 @@
+apiVersion: apps/v1  # Указывает API-версию для создания Deployment.
+kind: Deployment  # Тип ресурса, управляющий состоянием приложения (Deployment).
+metadata:
+  name: clickhouse  # Имя Deployment, которое будет использоваться для идентификации.
+spec:
+  replicas: 1  # Количество реплик (экземпляров) контейнера ClickHouse.
+  selector:
+    matchLabels:
+      app: clickhouse  # Указывает, что этот Deployment управляет подами с меткой "app: clickhouse".
+  template:  # Шаблон для создания подов.
+    metadata:
+      labels:
+        app: clickhouse  # Метка, которая будет присвоена создаваемым подам.
+    spec:
+      containers:
+        - name: clickhouse  # Имя контейнера.
+          image: yandex/clickhouse-server:latest  # Docker-образ ClickHouse с последней версией.
+          ports:
+            - containerPort: 9000  # Порт для подключения по TCP.
+              name: tcp-port  # Название порта для удобства.
+            - containerPort: 8123  # Порт для подключения по HTTP.
+              name: http-port  # Название порта для удобства.
+
+---
+apiVersion: v1  # Указывает API-версию для создания ресурса Service.
+kind: Service  # Тип ресурса - Service для доступа к ClickHouse.
+metadata:
+  name: clickhouse  # Имя Service, которое будет использоваться для идентификации.
+spec:
+  selector:
+    app: clickhouse  # Указывает, что этот сервис связывается с подами с меткой "app: clickhouse".
+  ports:
+    - protocol: TCP  # Используемый протокол TCP.
+      port: 9000  # Порт, на котором сервис будет доступен.
+      targetPort: 9000  # Порт контейнера, на который перенаправляется трафик.
+      name: tcp  # Название порта для идентификации.
+    - protocol: TCP  # Используемый протокол TCP.
+      port: 8123  # Порт, на котором сервис будет доступен.
+      targetPort: 8123  # Порт контейнера, на который перенаправляется трафик.
+      name: http  # Название порта для идентификации.
+  type: ClusterIP  # Тип сервиса, который доступен только внутри кластера.

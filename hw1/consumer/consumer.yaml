@@ -1,0 +1,54 @@
+apiVersion: apps/v1  # Указывает API-версию для создания Deployment.
+kind: Deployment  # Определяет ресурс Deployment для управления состоянием приложения.
+metadata:
+  name: consumer-deployment  # Имя Deployment, используемое для идентификации.
+spec:
+  replicas: 1  # Количество реплик приложения.
+  selector:
+    matchLabels:
+      app: consumer  # Метка для связи с подами.
+  template:  # Шаблон для создания подов.
+    metadata:
+      labels:
+        app: consumer  # Метка, назначаемая создаваемым подам.
+    spec:
+      containers:
+      - name: consumer-container  # Имя контейнера.
+        image: timmyalvice8/pyspark-consumer  # Docker-образ для Spark-консьюмера. !!! Заменить на свой !!!
+        ports:
+        - containerPort: 5001  # Открытие порта 5001 внутри контейнера.
+        env:  # Переменные окружения для контейнера.
+
+        # Kafka env
+        - name: KAFKA_BOOTSTRAP_SERVERS
+          valueFrom:
+            configMapKeyRef:
+              name: configs
+              key: KAFKA_BOOTSTRAP_SERVERS
+        - name: KAFKA_TOPIC
+          valueFrom:
+            configMapKeyRef:
+              name: configs
+              key: KAFKA_TOPIC
+
+        # Clickhouse env
+        - name: CLICKHOUSE_HOST
+          valueFrom:
+            configMapKeyRef:
+              name: configs
+              key: CLICKHOUSE_HOST
+        - name: CLICKHOUSE_PORT
+          valueFrom:
+            configMapKeyRef:
+              name: configs
+              key: CLICKHOUSE_PORT
+        - name: CLICKHOUSE_DATABASE
+          valueFrom:
+            configMapKeyRef:
+              name: configs
+              key: CLICKHOUSE_DATABASE
+        - name: CLICKHOUSE_TABLE
+          valueFrom:
+            configMapKeyRef:
+              name: configs
+              key: CLICKHOUSE_TABLE
